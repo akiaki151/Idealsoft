@@ -18,35 +18,31 @@ public class MouseContlloer : MonoBehaviour
     void Update()
     {
         position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        position.z = -1.0f;
+        position.z = 0.0f;
         this.transform.position = position;
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
         string Tag = collision.gameObject.tag;
-        if(Tag == "Save")
+        if (Tag == "Save")
             if (Input.GetMouseButton(0))
-            {
                 SceneManager.LoadSceneAsync("SaveScene");
-            }
 
         if (Tag == "Load")
             if (Input.GetMouseButton(0))
-            {
                 SceneManager.LoadSceneAsync("LoadScene");
-            }
 
         if (Tag == "Config")
             if (Input.GetMouseButton(0))
-            {
                 SceneManager.LoadSceneAsync("ConfigScene");
-            }
 
         if (Tag == "Title")
             if (Input.GetMouseButton(0))
-            {
                 SceneManager.LoadSceneAsync("TitleScene");
-            }
+
+        if (Tag == "Game")
+            if (Input.GetMouseButton(0))
+                SceneManager.LoadSceneAsync("GameScene");
     }
 }

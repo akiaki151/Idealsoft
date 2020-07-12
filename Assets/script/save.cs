@@ -16,9 +16,4 @@ public class save : MonoBehaviour
     {
 
     }
-
-    void ChangeScene()
-    {
-        SceneManager.LoadScene("SaveScene");
-    }
 }
