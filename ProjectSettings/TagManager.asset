@@ -13,6 +13,7 @@ TagManager:
   - InGameLoad
   - InGameConfig
   - Return
+  - Mouse
   layers:
   - Default
   - TransparentFX

@@ -32,11 +32,11 @@ public class InGameMouseContllore : MonoBehaviour
         string Tag = collision.gameObject.tag;
 
         if (Tag == "Title")
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
                 SceneManager.LoadSceneAsync("TitleScene");
 
         if (Tag == "InGameSave")
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 m_NowObject.SetActive(false);
                 SetSaveObject.SetActive(true);
@@ -44,7 +44,7 @@ public class InGameMouseContllore : MonoBehaviour
             }
 
         if (Tag == "InGameLoad")
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 m_NowObject.SetActive(false);
                 SetLoadObject.SetActive(true);
@@ -52,7 +52,7 @@ public class InGameMouseContllore : MonoBehaviour
             }
 
         if (Tag == "InGameConfig")
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 m_NowObject.SetActive(false);
                 SetConfigObject.SetActive(true);
@@ -60,7 +60,7 @@ public class InGameMouseContllore : MonoBehaviour
             }
 
         if (Tag == "Return")
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 m_NowObject.SetActive(false);
                 SetGameObject.SetActive(true);

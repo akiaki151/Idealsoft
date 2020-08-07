@@ -26,23 +26,23 @@ public class MouseContlloer : MonoBehaviour
     {
         string Tag = collision.gameObject.tag;
         if (Tag == "Save")
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
                 SceneManager.LoadSceneAsync("SaveScene");
 
         if (Tag == "Load")
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
                 SceneManager.LoadSceneAsync("LoadScene");
 
         if (Tag == "Config")
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
                 SceneManager.LoadSceneAsync("ConfigScene");
 
         if (Tag == "Title")
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
                 SceneManager.LoadSceneAsync("TitleScene");
 
         if (Tag == "Game")
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
                 SceneManager.LoadSceneAsync("GameScene");
     }
 }

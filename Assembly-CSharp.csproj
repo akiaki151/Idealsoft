@@ -62,8 +62,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\script\DisplayText.cs" />
+    <Compile Include="Assets\script\DropdownCreate.cs" />
     <Compile Include="Assets\script\InGameMouseContllore.cs" />
+    <Compile Include="Assets\script\InputText.cs" />
     <Compile Include="Assets\script\MouseContlloer.cs" />
+    <Compile Include="Assets\script\TextCreate.cs" />
     <Compile Include="Assets\script\save.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
